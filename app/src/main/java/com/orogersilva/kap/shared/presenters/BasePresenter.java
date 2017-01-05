@@ -1,4 +1,4 @@
-package com.orogersilva.kap;
+package com.orogersilva.kap.shared.presenters;
 
 /**
  * Created by orogersilva on 12/28/2016.

@@ -3,7 +3,9 @@
 buildscript {
 
     repositories {
+
         jcenter()
+        maven { url "https://jitpack.io" }
     }
 
     dependencies {
@@ -19,7 +21,9 @@ buildscript {
 allprojects {
 
     repositories {
+
         jcenter()
+        maven { url "https://jitpack.io" }
     }
 }
 
@@ -32,12 +36,15 @@ ext {
     buildToolsVersion = '25.0.0'
 
     // Dependencies versions
-    supportLibraryVersion = '24.2.1'
+    supportVersion = '24.2.1'
 
-    daggerLibraryVersion = '2.2'
-    espressoLibraryVersion = '2.2.2'
-    jsr250LibraryVersion = '1.0'
-    junitLibraryVersion = '4.12'
+    daggerVersion = '2.2'
+    daggerMockVersion = '0.6.2'
+    espressoVersion = '2.2.2'
+    mockitoVersion = '2.+'
+    jsr250Version = '1.0'
+    junitVersion = '4.12'
+    robolectricVersion = '3.1.4'
 }
 
 task clean(type: Delete) {

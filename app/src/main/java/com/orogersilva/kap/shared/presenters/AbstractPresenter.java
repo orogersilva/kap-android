@@ -1,4 +1,4 @@
-package com.orogersilva.kap.adapter;
+package com.orogersilva.kap.shared.presenters;
 
 import com.orogersilva.kap.domain.executor.Executor;
 import com.orogersilva.kap.domain.executor.MainThread;
@@ -11,8 +11,8 @@ public abstract class AbstractPresenter {
 
     // region FIELDS
 
-    protected Executor mExecutor;
-    protected MainThread mMainThread;
+    protected final Executor mExecutor;
+    protected final MainThread mMainThread;
 
     // endregion
 

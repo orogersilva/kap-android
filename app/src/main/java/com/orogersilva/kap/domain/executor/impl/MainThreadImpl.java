@@ -12,30 +12,15 @@ public class MainThreadImpl implements MainThread {
 
     // region FIELDS
 
-    private static MainThread INSTANCE;
-
     private Handler mHandler;
 
     // endregion
 
     // region CONSTRUCTORS
 
-    private MainThreadImpl() {
+    public MainThreadImpl(Handler handler) {
 
-        mHandler = new Handler();
-    }
-
-    // endregion
-
-    // region STATIC METHODS
-
-    public static MainThread getInstance() {
-
-        if (INSTANCE == null) {
-            INSTANCE = new MainThreadImpl();
-        }
-
-        return INSTANCE;
+        mHandler = handler;
     }
 
     // endregion

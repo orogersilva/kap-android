@@ -11,8 +11,8 @@ public abstract class AbstractUseCase implements UseCase {
 
     // region FIELDS
 
-    protected Executor mThreadExecutor;
-    protected MainThread mMainThread;
+    protected final Executor mThreadExecutor;
+    protected final MainThread mMainThread;
 
     // endregion
 
